@@ -70,3 +70,4 @@ C:\Users\osiri\Downloads\tpfinal\tpfinal_V1\tpfinal\obj\Debug\net6.0-windows\ref
 C:\Users\osiri\Downloads\tpfinal\tpfinal_V1\tpfinal\obj\Debug\net6.0-windows\tpfinal.pdb
 C:\Users\osiri\Downloads\tpfinal\tpfinal_V1\tpfinal\obj\Debug\net6.0-windows\tpfinal.genruntimeconfig.cache
 C:\Users\osiri\Downloads\tpfinal\tpfinal_V1\tpfinal\obj\Debug\net6.0-windows\ref\tpfinal.dll
+C:\Users\osiri\Downloads\tpfinal\tpfinal_V1\tpfinal\obj\Debug\net6.0-windows\tpfinal.sourcelink.json

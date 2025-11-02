@@ -22,23 +22,44 @@ namespace tpfinal
 			// 		distance = Math.Min(distance, Utils.calculateLevenshteinDistance(s1, s2));
 			// 	}
 			// }
-			
+
 			// return distance;
 
 			str1 = (str1 ?? "").Replace(" ", "").ToLowerInvariant();
-    		str2 = (str2 ?? "").Replace(" ", "").ToLowerInvariant();
+			str2 = (str2 ?? "").Replace(" ", "").ToLowerInvariant();
 
-    		return Utils.calculateLevenshteinDistance(str1, str2);
+			return Utils.calculateLevenshteinDistance(str1, str2);
 		}
 
-		public String Consulta1(ArbolGeneral<DatoDistancia> arbol)
-		{
-			String result = arbol.getDatoRaiz().texto;
-			foreach (var hijo in arbol.getHijos()){
-				result += "\n" + this.Consulta1(hijo);
-			}
-			return result;
-		}
+		// public String Consulta1(ArbolGeneral<DatoDistancia> arbol)
+		// {
+		// 	String result = arbol.getDatoRaiz().texto;
+		// 	foreach (var hijo in arbol.getHijos()){
+		// 		result += "\n" + this.Consulta1(hijo);
+		// 	}
+		// 	return result;
+		// }
+		
+		public String Consulta1(ArbolGeneral<DatoDistancia> arbol) {
+    if (arbol == null) {
+        return "";
+    }
+    return recorrerHojas(arbol);
+}        
+
+private String recorrerHojas(ArbolGeneral<DatoDistancia> arbol) {
+    if (arbol.esHoja()) {  // suponiendo que ArbolGeneral tiene método esHoja()
+        return arbol.getDatoRaiz() + "\n";
+    } else {
+			String resultado = "";
+		foreach (var hijo in arbol.getHijos()){
+		 		resultado += recorrerHojas(hijo);
+		 	}
+        return resultado;
+    }
+}
+
+
 
 
 		public string Consulta2(ArbolGeneral<DatoDistancia> arbol)
