@@ -31,33 +31,31 @@ namespace tpfinal
 			return Utils.calculateLevenshteinDistance(str1, str2);
 		}
 
-		// public String Consulta1(ArbolGeneral<DatoDistancia> arbol)
-		// {
-		// 	String result = arbol.getDatoRaiz().texto;
-		// 	foreach (var hijo in arbol.getHijos()){
-		// 		result += "\n" + this.Consulta1(hijo);
-		// 	}
-		// 	return result;
-		// }
 		
+		/**
+ 		* Consulta que recorre un árbol general y la cual retorna un texto con todas las hojas del árbol BK del sistema.
+		* @param arbol Árbol general de tipo DatoDistancia que se desea consultar
+		* @return String concatenado con los datos de todas las hojas del árbol. 
+		* Retorna cadena vacía si el árbol es null.
+		*/	
 		public String Consulta1(ArbolGeneral<DatoDistancia> arbol) {
-    if (arbol == null) {
-        return "";
-    }
-    return recorrerHojas(arbol);
-}        
+    		if (arbol == null) {
+        		return "";
+    		}
+    	return recorrerHojas(arbol);
+		}        
 
-private String recorrerHojas(ArbolGeneral<DatoDistancia> arbol) {
-    if (arbol.esHoja()) {  // suponiendo que ArbolGeneral tiene método esHoja()
-        return arbol.getDatoRaiz() + "\n";
-    } else {
-			String resultado = "";
-		foreach (var hijo in arbol.getHijos()){
-		 		resultado += recorrerHojas(hijo);
-		 	}
-        return resultado;
-    }
-}
+		private String recorrerHojas(ArbolGeneral<DatoDistancia> arbol) {
+			if (arbol.esHoja()) { 
+				return arbol.getDatoRaiz() + "\n";
+			} else {
+					String resultado = "";
+				foreach (var hijo in arbol.getHijos()){
+						resultado += recorrerHojas(hijo);
+					}
+				return resultado;
+			}
+		}
 
 
 

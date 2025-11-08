@@ -71,3 +71,51 @@ C:\Users\osiri\Downloads\tpfinal\tpfinal_V1\tpfinal\obj\Debug\net6.0-windows\tpf
 C:\Users\osiri\Downloads\tpfinal\tpfinal_V1\tpfinal\obj\Debug\net6.0-windows\tpfinal.genruntimeconfig.cache
 C:\Users\osiri\Downloads\tpfinal\tpfinal_V1\tpfinal\obj\Debug\net6.0-windows\ref\tpfinal.dll
 C:\Users\osiri\Downloads\tpfinal\tpfinal_V1\tpfinal\obj\Debug\net6.0-windows\tpfinal.sourcelink.json
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\bin\Debug\net6.0-windows\tpfinal.exe
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\bin\Debug\net6.0-windows\tpfinal.deps.json
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\bin\Debug\net6.0-windows\tpfinal.runtimeconfig.json
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\bin\Debug\net6.0-windows\tpfinal.dll
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\bin\Debug\net6.0-windows\tpfinal.pdb
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\bin\Debug\net6.0-windows\TextFieldParserStandard.dll
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\obj\Debug\net6.0-windows\tpfinal.csproj.AssemblyReference.cache
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\obj\Debug\net6.0-windows\tpfinal.Form1.resources
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\obj\Debug\net6.0-windows\tpfinal.Form2.resources
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\obj\Debug\net6.0-windows\tpfinal.Consultas.resources
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\obj\Debug\net6.0-windows\tpfinal.Inicio.resources
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\obj\Debug\net6.0-windows\tpfinal.ListItem.resources
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\obj\Debug\net6.0-windows\tpfinal.Properties.Resources.resources
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\obj\Debug\net6.0-windows\tpfinal.csproj.GenerateResource.cache
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\obj\Debug\net6.0-windows\tpfinal.GeneratedMSBuildEditorConfig.editorconfig
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\obj\Debug\net6.0-windows\tpfinal.AssemblyInfoInputs.cache
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\obj\Debug\net6.0-windows\tpfinal.AssemblyInfo.cs
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\obj\Debug\net6.0-windows\tpfinal.csproj.CoreCompileInputs.cache
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\obj\Debug\net6.0-windows\tpfinal.csproj.CopyComplete
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\obj\Debug\net6.0-windows\tpfinal.dll
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\obj\Debug\net6.0-windows\refint\tpfinal.dll
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\obj\Debug\net6.0-windows\tpfinal.pdb
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\obj\Debug\net6.0-windows\tpfinal.genruntimeconfig.cache
+D:\1. UNAJ\2 ° AÑO\Complejidad Temporal, Estructura de Datos y Algoritmo\2025\tpfinal\tpfinal_V2\tpfinal\obj\Debug\net6.0-windows\ref\tpfinal.dll
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\bin\Debug\net6.0-windows\tpfinal.exe
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\bin\Debug\net6.0-windows\tpfinal.deps.json
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\bin\Debug\net6.0-windows\tpfinal.runtimeconfig.json
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\bin\Debug\net6.0-windows\tpfinal.dll
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\bin\Debug\net6.0-windows\tpfinal.pdb
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\bin\Debug\net6.0-windows\TextFieldParserStandard.dll
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\obj\Debug\net6.0-windows\tpfinal.csproj.AssemblyReference.cache
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\obj\Debug\net6.0-windows\tpfinal.Form1.resources
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\obj\Debug\net6.0-windows\tpfinal.Form2.resources
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\obj\Debug\net6.0-windows\tpfinal.Consultas.resources
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\obj\Debug\net6.0-windows\tpfinal.Inicio.resources
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\obj\Debug\net6.0-windows\tpfinal.ListItem.resources
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\obj\Debug\net6.0-windows\tpfinal.Properties.Resources.resources
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\obj\Debug\net6.0-windows\tpfinal.csproj.GenerateResource.cache
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\obj\Debug\net6.0-windows\tpfinal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\obj\Debug\net6.0-windows\tpfinal.AssemblyInfoInputs.cache
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\obj\Debug\net6.0-windows\tpfinal.AssemblyInfo.cs
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\obj\Debug\net6.0-windows\tpfinal.csproj.CoreCompileInputs.cache
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\obj\Debug\net6.0-windows\tpfinal.csproj.CopyComplete
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\obj\Debug\net6.0-windows\tpfinal.dll
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\obj\Debug\net6.0-windows\refint\tpfinal.dll
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\obj\Debug\net6.0-windows\tpfinal.pdb
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\obj\Debug\net6.0-windows\tpfinal.genruntimeconfig.cache
+C:\Users\leone\OneDrive\Desktop\DAVID\CTEDyA\tpfinal_V3\tpfinal\obj\Debug\net6.0-windows\ref\tpfinal.dll
