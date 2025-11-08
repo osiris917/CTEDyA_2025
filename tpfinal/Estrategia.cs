@@ -106,76 +106,41 @@ namespace tpfinal
 		* @return String que contiene los datos almacenados en los nodos del árbol diferenciados 
 		* por el nivel en que se encuentran.
 		*/	
-		// public string Consulta3(ArbolGeneral<DatoDistancia> arbol)
-		// {
-		// 	if (arbol == null || arbol.getDatoRaiz() == null)
-		// 		return "";
-
-		// 	List<string> niveles = new List<string>();
-		// 	this.RecorrerPorNivel(arbol, 0, niveles);
-
-		// 	string resultado = "";
-		// 	for (int i = 0; i < niveles.Count; i++)
-		// 	{
-		// 		resultado += "Nivel " + i + ": " + niveles[i].Trim() + "\n";
-		// 	}
-
-		// 	return resultado.Trim();
-		// }
-
-		// private void RecorrerPorNivel(ArbolGeneral<DatoDistancia> nodo, int nivel, List<string> niveles)
-		// {
-		// 	if (nodo == null)
-		// 		return;
-
-		// 	// Si la lista no tiene espacio para este nivel, lo agregamos
-		// 	if (niveles.Count <= nivel)
-		// 		niveles.Add("");
-
-		// 	// Agregamos el texto del nodo al nivel correspondiente
-		// 	niveles[nivel] += nodo.getDatoRaiz().texto + " ";
-
-		// 	// Recorremos recursivamente los hijos
-		// 	foreach (var hijo in nodo.getHijos())
-		// 	{
-		// 		RecorrerPorNivel(hijo, nivel + 1, niveles);
-		// 	}
-		// }
 		public string Consulta3(ArbolGeneral<DatoDistancia> arbol)
-{
-    if (arbol == null)
-        return "";
+		{
+			if (arbol == null)
+				return "";
 
-    Cola<ArbolGeneral<DatoDistancia>> cola = new Cola<ArbolGeneral<DatoDistancia>>();
-    string resultado = "";
+			Cola<ArbolGeneral<DatoDistancia>> cola = new Cola<ArbolGeneral<DatoDistancia>>();
+			string resultado = "";
 
-    cola.encolar(arbol);
-    cola.encolar(null); // marcador de fin de nivel
+			cola.encolar(arbol);
+			cola.encolar(null);
 
-    while (!cola.esVacia())
-    {
-        ArbolGeneral<DatoDistancia> nodo = cola.desencolar();
+			while (!cola.esVacia())
+			{
+				ArbolGeneral<DatoDistancia> nodo = cola.desencolar();
 
-        if (nodo != null)
-        {
-            resultado += nodo.getDatoRaiz().ToString() + " ";
+				if (nodo != null)
+				{
+					resultado += nodo.getDatoRaiz().ToString() + " ";
 
-            foreach (var hijo in nodo.getHijos())
-            {
-                cola.encolar(hijo);
-            }
-        }
-        else
-        {
-            resultado += "\n";
+					foreach (var hijo in nodo.getHijos())
+					{
+						cola.encolar(hijo);
+					}
+				}
+				else
+				{
+					resultado += "\n";
 
-            if (!cola.esVacia())
-                cola.encolar(null);
-        }
-    }
+					if (!cola.esVacia())
+						cola.encolar(null);
+				}
+			}
 
-    return resultado;
-}
+			return resultado;
+		}
 
 
 
