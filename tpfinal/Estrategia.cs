@@ -33,7 +33,7 @@ namespace tpfinal
 
 		
 		/**
- 		* Consulta que recorre un árbol general y la cual retorna un texto con todas las hojas del árbol BK del sistema.
+ 		* Consulta todas las Hojas.
 		* @param arbol Árbol general de tipo DatoDistancia que se desea consultar
 		* @return String concatenado con los datos de todas las hojas del árbol. 
 		* Retorna cadena vacía si el árbol es null.
@@ -58,8 +58,12 @@ namespace tpfinal
 		}
 
 
-
-
+		/**
+ 		* Consulta todos los Caminos hasta cada Hojas.
+		* @param arbol ÁrbolGeneral de tipo DatoDistancia que se desea consultar
+		* @return String que contiene todos los caminos hasta cada hoja.
+		* Retorna cadena vacía si el árbol es null.
+		*/	
 		public string Consulta2(ArbolGeneral<DatoDistancia> arbol)
 		{
 			if (arbol == null)
@@ -96,6 +100,12 @@ namespace tpfinal
 			}
 		}
 
+		/**
+ 		* Consulta por Nivel.
+		* @param arbol ÁrbolGeneral de tipo DatoDistancia que se desea consultar
+		* @return String que contiene los datos almacenados en los nodos del árbol diferenciados 
+		* por el nivel en que se encuentran.
+		*/	
 		public string Consulta3(ArbolGeneral<DatoDistancia> arbol)
 		{
 			if (arbol == null || arbol.getDatoRaiz() == null)
@@ -133,7 +143,12 @@ namespace tpfinal
 		}
 
 
-		
+		/*
+		* Agregar Dato al Arbol BK
+		* @param ArbolGeneral<DatoDistancia> arbol
+		* @param DatoDistancia dato
+		* @return void
+		**/
 		public void AgregarDato(ArbolGeneral<DatoDistancia> arbol, DatoDistancia dato)
 		{
 			if (arbol == null | arbol.getDatoRaiz() == null)
