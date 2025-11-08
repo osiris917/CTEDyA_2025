@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "SSRcBdXOKhbBBh1aeQ3TtpJCSUfheF9uHgn+4j2DMXpo865boPGq3/QNHOgnq6V/ROT/KDwneUK22SAnfM6lfg==",
+  "dgSpecHash": "JIjLNbmb9CGflgTT05QbSsz9BBmEQjxC+cJBpAAXUt/Tas5HzMS6w6H7Bf0nt2eX4Gg3a6Hm7LDjjQk+jfWq6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\leone\\OneDrive\\Desktop\\DAVID\\CTEDyA\\tpfinal_V3\\tpfinal\\tpfinal.csproj",
+  "projectFilePath": "C:\\Users\\osiri\\OneDrive\\Escritorio\\tpfinal_V3\\tpfinal\\tpfinal.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\leone\\.nuget\\packages\\textfieldparserstandard\\1.0.0\\textfieldparserstandard.1.0.0.nupkg.sha512"
+    "C:\\Users\\osiri\\.nuget\\packages\\textfieldparserstandard\\1.0.0\\textfieldparserstandard.1.0.0.nupkg.sha512",
+    "C:\\Users\\osiri\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.28\\microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\osiri\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.28\\microsoft.windowsdesktop.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\osiri\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.28\\microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512",
+    "C:\\Users\\osiri\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.28\\microsoft.netcore.app.host.win-x64.6.0.28.nupkg.sha512"
   ],
   "logs": []
 }
