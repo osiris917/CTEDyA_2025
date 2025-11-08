@@ -42,7 +42,7 @@ namespace tpfinal
     		if (arbol == null) {
         		return "";
     		}
-    	return recorrerHojas(arbol);
+    		return recorrerHojas(arbol);
 		}        
 
 		private String recorrerHojas(ArbolGeneral<DatoDistancia> arbol) {
@@ -86,7 +86,7 @@ namespace tpfinal
 			camino.Add(nodo.getDatoRaiz().texto);
 
 			// Si el nodo es hoja, agrego el camino al resultado
-			if (nodo.getHijos() == null || nodo.getHijos().Count == 0)
+			if (nodo.esHoja())
 			{
 				resultado += string.Join(" -> ", camino) + "\n";
 			}
@@ -106,41 +106,78 @@ namespace tpfinal
 		* @return String que contiene los datos almacenados en los nodos del árbol diferenciados 
 		* por el nivel en que se encuentran.
 		*/	
+		// public string Consulta3(ArbolGeneral<DatoDistancia> arbol)
+		// {
+		// 	if (arbol == null || arbol.getDatoRaiz() == null)
+		// 		return "";
+
+		// 	List<string> niveles = new List<string>();
+		// 	this.RecorrerPorNivel(arbol, 0, niveles);
+
+		// 	string resultado = "";
+		// 	for (int i = 0; i < niveles.Count; i++)
+		// 	{
+		// 		resultado += "Nivel " + i + ": " + niveles[i].Trim() + "\n";
+		// 	}
+
+		// 	return resultado.Trim();
+		// }
+
+		// private void RecorrerPorNivel(ArbolGeneral<DatoDistancia> nodo, int nivel, List<string> niveles)
+		// {
+		// 	if (nodo == null)
+		// 		return;
+
+		// 	// Si la lista no tiene espacio para este nivel, lo agregamos
+		// 	if (niveles.Count <= nivel)
+		// 		niveles.Add("");
+
+		// 	// Agregamos el texto del nodo al nivel correspondiente
+		// 	niveles[nivel] += nodo.getDatoRaiz().texto + " ";
+
+		// 	// Recorremos recursivamente los hijos
+		// 	foreach (var hijo in nodo.getHijos())
+		// 	{
+		// 		RecorrerPorNivel(hijo, nivel + 1, niveles);
+		// 	}
+		// }
 		public string Consulta3(ArbolGeneral<DatoDistancia> arbol)
-		{
-			if (arbol == null || arbol.getDatoRaiz() == null)
-				return "";
+{
+    if (arbol == null)
+        return "";
 
-			List<string> niveles = new List<string>();
-			this.RecorrerPorNivel(arbol, 0, niveles);
+    Cola<ArbolGeneral<DatoDistancia>> cola = new Cola<ArbolGeneral<DatoDistancia>>();
+    string resultado = "";
 
-			string resultado = "";
-			for (int i = 0; i < niveles.Count; i++)
-			{
-				resultado += "Nivel " + i + ": " + niveles[i].Trim() + "\n";
-			}
+    cola.encolar(arbol);
+    cola.encolar(null); // marcador de fin de nivel
 
-			return resultado.Trim();
-		}
+    while (!cola.esVacia())
+    {
+        ArbolGeneral<DatoDistancia> nodo = cola.desencolar();
 
-		private void RecorrerPorNivel(ArbolGeneral<DatoDistancia> nodo, int nivel, List<string> niveles)
-		{
-			if (nodo == null)
-				return;
+        if (nodo != null)
+        {
+            resultado += nodo.getDatoRaiz().ToString() + " ";
 
-			// Si la lista no tiene espacio para este nivel, lo agregamos
-			if (niveles.Count <= nivel)
-				niveles.Add("");
+            foreach (var hijo in nodo.getHijos())
+            {
+                cola.encolar(hijo);
+            }
+        }
+        else
+        {
+            resultado += "\n";
 
-			// Agregamos el texto del nodo al nivel correspondiente
-			niveles[nivel] += nodo.getDatoRaiz().texto + " ";
+            if (!cola.esVacia())
+                cola.encolar(null);
+        }
+    }
 
-			// Recorremos recursivamente los hijos
-			foreach (var hijo in nodo.getHijos())
-			{
-				RecorrerPorNivel(hijo, nivel + 1, niveles);
-			}
-		}
+    return resultado;
+}
+
+
 
 
 		/*
@@ -164,44 +201,19 @@ namespace tpfinal
 			}
 			else
 			{
-				DatoDistancia nuevoArbol = new DatoDistancia(distancia, dato.texto, dato.descripcion);
-				arbol.agregarHijo(new ArbolGeneral<DatoDistancia>(nuevoArbol));
+				DatoDistancia nuevoDato = new DatoDistancia(distancia, dato.texto, dato.descripcion);
+				arbol.agregarHijo(new ArbolGeneral<DatoDistancia>(nuevoDato));
 			}
 		}
 
-		// public void AgregarDato(ArbolGeneral<DatoDistancia> arbol, DatoDistancia dato)
-		// {
-		// 	if (arbol == null)
-        // 		return;
-
-		// 	if (arbol.getDatoRaiz() == null)
-		// 	{
-		// 		arbol.setDatoRaiz(dato);
-		// 		return;
-		// 	}
-			
-
-		// 	ArbolGeneral<DatoDistancia> arbolActual = arbol;
-		// 	while (true)
-		// 	{
-		// 		int distancia = this.CalcularDistancia(arbolActual.getDatoRaiz().texto, dato.texto);
-
-		// 		ArbolGeneral<DatoDistancia>? hijo = this.getHijoConDistancia(arbolActual.getHijos(), distancia);
-
-		// 		if (hijo != null)
-		// 		{
-		// 			arbolActual = hijo;
-		// 		}
-		// 		else
-		// 		{
-		// 			DatoDistancia datoDistancia = new DatoDistancia(distancia, dato.texto, dato.descripcion);
-		// 			arbolActual.agregarHijo(new ArbolGeneral<DatoDistancia>(datoDistancia));
-		// 			break;
-		// 		}
-		// 	}
-		// }
-
-
+		/*
+		* Buscar Dato según un umbral
+		* @param ArbolGeneral<DatoDistancia> arbol
+		* @param String elemento a buscar
+		* @param int umbral
+		* @param List<DatoDistancia> collected
+		* @return void
+		**/
 		public void Buscar(ArbolGeneral<DatoDistancia> arbol, string elementoABuscar, int umbral, List<DatoDistancia> collected)
 		{
 			if (arbol == null) return;
@@ -235,3 +247,36 @@ namespace tpfinal
 		}
     }
 }
+
+
+// public void AgregarDato(ArbolGeneral<DatoDistancia> arbol, DatoDistancia dato)
+		// {
+		// 	if (arbol == null)
+        // 		return;
+
+		// 	if (arbol.getDatoRaiz() == null)
+		// 	{
+		// 		arbol.setDatoRaiz(dato);
+		// 		return;
+		// 	}
+			
+
+		// 	ArbolGeneral<DatoDistancia> arbolActual = arbol;
+		// 	while (true)
+		// 	{
+		// 		int distancia = this.CalcularDistancia(arbolActual.getDatoRaiz().texto, dato.texto);
+
+		// 		ArbolGeneral<DatoDistancia>? hijo = this.getHijoConDistancia(arbolActual.getHijos(), distancia);
+
+		// 		if (hijo != null)
+		// 		{
+		// 			arbolActual = hijo;
+		// 		}
+		// 		else
+		// 		{
+		// 			DatoDistancia datoDistancia = new DatoDistancia(distancia, dato.texto, dato.descripcion);
+		// 			arbolActual.agregarHijo(new ArbolGeneral<DatoDistancia>(datoDistancia));
+		// 			break;
+		// 		}
+		// 	}
+		// }
